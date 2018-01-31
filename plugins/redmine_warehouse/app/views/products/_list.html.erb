@@ -1,0 +1,27 @@
+<div class="autoscroll">
+<table class="list issues ">
+  <thead>
+    <tr>
+    </tr>
+  </thead>
+  <tbody>
+    <% products.each do |product| %>
+    <tr class="group open">
+    <td colspan="8">
+    <%= product.name %>
+    </td>
+    <td colspan="4"><%= product.cost %></td>
+    <td colspan="4"><%= product.quantity %></td>
+    <td colspan="4"><%= product.date_production %></td>
+
+    <td colspan="4"><%= render :partial => 'products/action_menu', locals: {product: product}%></td>
+    </tr>
+
+    <% end %>
+  </tbody>
+</table>
+  <div class="contextual">
+    <%= link_to l(:button_add), new_product_path(issue_id: @issue) unless params[:action] == 'index'  %>
+  </div>
+</div>
+

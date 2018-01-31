@@ -1,0 +1,4 @@
+<hr>
+<b><%= l(:warehouse) %></b>
+<% @products=Product.where(issue_id: @issue.id).limit(10) %>
+<%= render :partial => 'products/list', :locals => {:products => @products, :query => @query} %>

@@ -1,0 +1,5 @@
+# English strings go here for Rails i18n
+en:
+  add_product: "Add Product"
+  warehouse: WAREHOUSE
+  label_product_new: Add product

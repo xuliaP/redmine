@@ -1,0 +1,12 @@
+<div class="autoscroll">
+  <table class="list issues ">
+    <td colspan="8">
+      <%= @product.name %>
+    </td>
+    <td colspan="4"><%= @product.cost %></td>
+    <td colspan="4"><%= @product.quantity %></td>
+    <td colspan="4"><%= @product.date_production %></td>
+  </tr>
+  </table>
+</div>
+<%= link_to l(:back), products_path,  :class => 'icon icon-back'  %>

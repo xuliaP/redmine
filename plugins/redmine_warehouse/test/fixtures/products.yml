@@ -1,0 +1,6 @@
+one:
+  id: 1
+  name: Ruby on Rails
+  issue_id: 1
+  quantity: 1
+  cost: 1

@@ -1,0 +1,10 @@
+
+<%= hidden_field_tag 'back_url', params[:back_url], :id => nil if params[:back_url].present? %>
+
+
+
+
+<p><%= f.text_field :name, :size => 80, :maxlength => 255, :required => true %></p>
+<p><%= f.number_field :cost, :required => true %></p>
+<p><%= f.number_field :quantity, :required => true %></p>
+<p><%= f.date_field :date_production, :required => true %></p>
